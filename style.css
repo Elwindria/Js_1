@@ -7,6 +7,26 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+#container{
+    background-image: url("bg-intro-desktop.png");
+    width: 100vh;
+    background-color: #ff7a7a;
+
+}
+
+p{
+    color:white
+}
+
+h1{
+    color: white;
+}
+
+
+
+
+
 #main {
     display: flex;
     margin: 6.25rem;
