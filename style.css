@@ -7,12 +7,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
 #container{
     background-image: url("bg-intro-desktop.png");
-    width: 100vh;
     background-color: #ff7a7a;
-
 }
 
 p{
@@ -22,10 +19,6 @@ p{
 h1{
     color: white;
 }
-
-
-
-
 
 #main {
     display: flex;
@@ -42,5 +35,3 @@ h1{
 #right>#try>p>span{
     font-weight: 600;
 }
-
-
