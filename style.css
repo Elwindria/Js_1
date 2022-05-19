@@ -9,29 +9,57 @@ body {
 
 #container{
     background-image: url("bg-intro-desktop.png");
+    background-repeat: no-repeat;
     background-color: #ff7a7a;
 }
 
+#right {
+    width: 50%;
+    padding:1.875rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#left {
+    width: 50%;
+    padding:1.875rem;
+    justify-content: center;
+}
+
 p{
-    color:white
+    color:#ffffff
 }
 
 h1{
-    color: white;
+    color: #ffffff;
 }
 
 #main {
     display: flex;
-    margin: 6.25rem;
-    gap: 3.125rem;
+    margin: 4.375rem;
 }
 
 #right>#try>p {
     background-color: hsl(248, 32%, 49%);
     border-radius: .4375rem;
     padding:10px;
+    text-align: center;
 }
 
 #right>#try>p>span{
     font-weight: 600;
+}
+
+label {
+    position:absolute;
+    color: hsl(249, 10%, 26%);
+    text-indent: 5%;
+    width:18.75rem;
+}
+
+#button {
+    text-transform:uppercase;
+    background-color: hsl(154, 59%, 51%);
+    padding: 10px;
+    
 }
