@@ -3,7 +3,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
+
 
 #container{
     background-image: url("bg-intro-desktop.png");
@@ -20,6 +23,24 @@ h1{
     color: white;
 }
 
-#try{
-    color: white;
+
+
+
+
+#main {
+    display: flex;
+    margin: 6.25rem;
+    gap: 3.125rem;
 }
+
+#right>#try>p {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: .4375rem;
+    padding:10px;
+}
+
+#right>#try>p>span{
+    font-weight: 600;
+}
+
+
