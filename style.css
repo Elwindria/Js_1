@@ -11,7 +11,7 @@ body {
     background-image: url("bg-intro-desktop.png");
     background-repeat: no-repeat;
     background-color: #ff7a7a;
-    max-width: 1000px;
+    max-width: 1440px;
 }
 
 #right {
@@ -50,18 +50,11 @@ h1{
     padding:10px;
     text-align: center;
     box-shadow: 0px 5px hsla(0, 0%, 0%, 0.198);
-    font-size: 16px;
+    font-size: 11px;
 }
 
 #right>#try>p>span{
     font-weight: 600;
-}
-
-label {
-    position:absolute;
-    color: hsl(249, 10%, 26%);
-    text-indent: 5%;
-    width:18.75rem;
 }
 
 #button {
@@ -75,6 +68,11 @@ label {
     color:#FBFBFB;
     font-weight: 600;
     font-family: poppins;
+}
+
+#button:hover {
+    background-color: hsl(154, 49%, 63%);
+    cursor: pointer;
 }
 
 #div_form_main{
@@ -102,4 +100,43 @@ input {
     font-weight: 500;
     margin:5px 0;
     font-family: poppins;
+    border-color: hsla(246, 25%, 77%, 0.297);
+    border-style:solid;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 375px) {
+
+    #container{
+        max-width: 375px;
+        background-image: url(/Github/Js_1/images/bg-intro-mobile.png);
+
+    }
+
+    #main {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #left {
+        width: unset;
+    }
+
+    #right {
+        width: unset;
+    }
+
+    #div_form_main>p{
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    h1{
+        text-align: center;
+    }
 }
