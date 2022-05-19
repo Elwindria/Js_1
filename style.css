@@ -4,3 +4,22 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+#container{
+    background-image: url("bg-intro-desktop.png");
+    width: 100vh;
+    background-color: #ff7a7a;
+
+}
+
+p{
+    color:white
+}
+
+h1{
+    color: white;
+}
+
+#try{
+    color: white;
+}
