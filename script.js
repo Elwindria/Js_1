@@ -9,15 +9,16 @@ console.log(all_input)
 
 function validate() {
 
-  all_input.forEach(element => console.log(element.id));
+  all_input.forEach(element => {
+    console.log(element.id)
 
-  if (validityState.valueMissing) {
+  if (element.validity.valueMissing) {
     console.log('You gotta fill this out, yo!');
   } else {
     console.log('cest ok');
   }
 
   console.log(document.getElementById("name").validity)
-
+});
   
 }
