@@ -1,20 +1,19 @@
-// function validateForm()                                 
-// { 
-//     var name = document.forms["form"]["name"];         
-//     if (name.value == ""){ 
-//         document.getElementById('errorname').innerHTML="Veuillez entrez un nom valide";  
-//         name.focus(); 
-//         return false; 
-//     }else{
-//         document.getElementById('errorname').innerHTML="";  
-//     }
-// }
+const form = document.getElementById("form")
+const button = document.getElementById("button")
+const inputs = document.querySelectorAll("case")
+const input = document.getElementById("name");
+button.addEventListener("click", validate)
 
-function validate(form) {
-    const input = document.getElementById(input);
-    const validityState = input.validity;
+function validate() {
+
   
-    if (validityState.valueMissing) {
-      input.setCustomValidity('First Name cannot be empty');
-    }
+
+  if (input.validity.valueMissing) {
+    console.log('You gotta fill this out, yo!');
+  } else {
+    console.log('cest ok');
+  }
+
+  console.log(document.getElementById("name").validity)
+
 }
