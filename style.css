@@ -109,6 +109,7 @@ input {
     border-style:solid;
     border-radius: 5px;
     border-width: 1px;
+    margin-bottom: 2px;
 }
 
 input:focus {
@@ -117,10 +118,25 @@ input:focus {
     
 }
 
-/* input:invalid {
-    border: red solid 3px;
-  } */
+.form_input_invalid  {
+    border: red solid 1px;
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position:97%;
+  }
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
   
+.form_span_invalid {
+    color:red;
+    font-size: 7px;
+    text-align: right;
+}
+
+
 
 
 @media screen and (max-width: 375px) {
