@@ -26,16 +26,14 @@
                     <p><span>Try if free 7 days </span>then $20/mo.thereafter</p>
                 </div>
                 <div id="div_form_main">
-                    <form method="get" class="form">
-                        <input type="text" name="name"  placeholder="Name">
-                        <input type="text" name="last_name" placeholder="Last name"><br>
-                        <input type="email" name="email" placeholder="Email Address"><br>
-                        <input type="password" name="Password" placeholder="Password"><br>
+                    <form id="form" novalidate >
+                        <input type="text" placeholder="Name" required id="name" class="case">
+                        <input type="text" id="last_name" placeholder="Last name" required class="case"><br>
+                        <input type="email" placeholder="Email Address" id="email" required class="case"><br>
+                        <input type="password" id="Password" placeholder="Password" required class="case"><br>
                     
-                        <div class="div_form">
-                          <input id=button type="submit" value="claim your free trial">
-                        </div>
-                      </form>
+                        <input id="button" type="button" value="claim your free trial">
+                    </form>
                       <p>By clicking the button, you are agreeing to our <span>Therms and Services</span></p>
                 </div>
             </div>
