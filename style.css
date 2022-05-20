@@ -108,7 +108,19 @@ input {
     border-color: hsla(246, 25%, 77%, 0.297);
     border-style:solid;
     border-radius: 5px;
+    border-width: 1px;
 }
+
+input:focus {
+    outline:none;
+    border-color: #212121;
+    
+}
+
+/* input:invalid {
+    border: red solid 3px;
+  } */
+  
 
 
 @media screen and (max-width: 375px) {
