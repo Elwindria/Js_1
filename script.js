@@ -1,14 +1,17 @@
 const form = document.getElementById("form")
 const button = document.getElementById("button")
-const inputs = document.querySelectorAll("case")
+const all_input = document.querySelectorAll(".case")
 const input = document.getElementById("name");
+// const validityState = inputs.validity;
 button.addEventListener("click", validate)
+
+console.log(all_input)
 
 function validate() {
 
-  
+  all_input.forEach(element => console.log(element.id));
 
-  if (input.validity.valueMissing) {
+  if (validityState.valueMissing) {
     console.log('You gotta fill this out, yo!');
   } else {
     console.log('cest ok');
@@ -16,4 +19,5 @@ function validate() {
 
   console.log(document.getElementById("name").validity)
 
+  
 }
